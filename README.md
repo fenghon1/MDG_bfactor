@@ -98,13 +98,13 @@ python codes/mGLI-Bfactor.py --dataset_name Bfactor-small
 ## Results
 
 ### I. Modeling the Set-364 b-factor dataset
-| Models       | [GNM](https://dyn.life.nthu.edu.tw/oGNM/oGNM.php) [result](./Results)  | pfFRI [result](./Results)| ASPH | opFRI [result](./Results)| EH   | mGLI [result](./Results)|
+| Models       | [GNM](https://dyn.life.nthu.edu.tw/oGNM/oGNM.php)  | pfFRI | ASPH | opFRI | EH   | mDG [result](./Results)|
 |--------------|-------|-------|------|-------|------|------|
-| PCC          | 0.565 | 0.626 | 0.65 | 0.673 | 0.698| 0.762|
+| PCC          | 0.565 | 0.626 | 0.65 | 0.673 | 0.698| 0.715|
 
 ---
 
-## License
+## LicenseJournal of Computational Chemistry
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
