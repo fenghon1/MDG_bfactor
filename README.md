@@ -65,10 +65,17 @@ A brief introduction about the benchmarks.
 ---
 
 ## Modeling with mDG-based features
-### I. mDG-based B-factor prediction
+
+### I. mDG feature generation for 365 proteins
 
 ```shell
-python codes/mGLI-Bfactor.py --dataset_name Bfactor-small
+python codes/run_Bfactor-DG-features.py
+```
+---
+
+### II. mDG-based B-factor least square approximation
+```shell
+python codes/run_model-Bfactor-DG.py --dataset_name Bfactor-small
 ```
 ---
 ## Results
