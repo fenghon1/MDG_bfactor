@@ -52,16 +52,18 @@ Protein flexibility is crucial for understanding protein structures, functions, 
 
 ## Datasets
 
-A brief introduction about the benchmarks.
 
-| Datasets                |Total    | Training Set                 | Test Set                                             |
+| Datasets                |Total    |Set                                             |
 |-|-----------------------------|------------------------------|------------------------------                        |
-| Bfactor-Set364 | 364  [Data](./datasets)     |   -    |      -                                                            |
-| Bfactor-small | 30     [Data](./datasets)  |   -    |      -                                                            |
-| Bfactor-medium | 36    [Data](./datasets)  |   -    |      -                                                            |
-| Bfactor-large | 34   [Data](./datasets)    |   -    |      -                                                            |
+| Bfactor-Set364 | 364 | [Data](./datasets)     |-                                                            |
+| Bfactor-small | 30    | [Data](./datasets)  | -                                                            |
+| Bfactor-medium | 36    |[Data](./datasets)  |-                                                            |
+| Bfactor-large | 34  | [Data](./datasets)    |-                                                            |
 
-- Data for B-factor datasets: molecular 3D structures
+- Data for B-factor datasets: molecular 3D structures [Data](./datasets/365)
+- Global features used for blind predictions [Data](./features/features-blind-prediction/)
+
+
 ---
 
 ## Modeling with mDG-based features
