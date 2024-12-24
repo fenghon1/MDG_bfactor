@@ -17,15 +17,13 @@
 
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-- [Model Architecture](#model-architecture)
 - [Prerequisites](#prerequisites)
-- [Visualization tools](#Visualization-tools)
 - [Datasets](#datasets)
 - [Modeling with mGLI-based features](#Modeling-with-mGLI-based-features)
-    - [mGLI-based B-factor prediction](#i-mgli-based-b-factor-prediction)
+    - [mDG feature generation for 365 proteins](#i-mDG-based-b-factor-prediction)
+    - [mDG-based B-factor least square approximation](#mDG-based-B-factor-least-square-approximation)
 - [Results](#results)
-    - [I. Modeling the B-factor datasets]()
-    - [II. Modeling the PDBbind datasets]()
+    - [Modeling the Set-364 b-factor dataset]()
 - [License](#license)
 - [Citation](#citation)
 
@@ -83,14 +81,14 @@ python codes/run_model-Bfactor-DG.py --dataset_name Bfactor-small
 ---
 ## Results
 
-### I. Modeling the Set-364 b-factor dataset
+### Modeling the Set-364 b-factor dataset
 | Models       | [GNM](https://dyn.life.nthu.edu.tw/oGNM/oGNM.php)  | pfFRI | ASPH | opFRI | EH   | mDG [result](./Results)|
 |--------------|-------|-------|------|-------|------|------|
 | PCC          | 0.565 | 0.626 | 0.65 | 0.673 | 0.698| 0.715|
 
 ---
 
-## LicenseJournal of Computational Chemistry
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
