@@ -3,21 +3,27 @@ import os
 import argparse
 import numpy as np
 import utilities as ut
-import DG_path
 from Gaussian_mean_curvature import Curvature_Exp, Curvature_Lor
 
 
 def main(args):
 
-    mypath = DG_path.path_config()
+    my_path = {}
+    my_path["bin_dir"] = "bin"
+    my_path["src_dir"] = "src"
+    my_path["data_dir"] = "datasets"
+    my_path["features_dir"] = "features"
+    my_path["results_dir"] = "results"
 
     kappa = args.kappa
     Bfactor_fileid = args.Bfactor_fileid
-    feature_path = f"{mypath['features_dir']}/{args.dataset_name}"
+    feature_path = f"{my_path['features_dir']}/{args.dataset_name}"
     os.makedirs(feature_path, exist_ok=True)
 
     pdbid = Bfactor_fileid.split(".")[0]
-    Bfactor_file_path = f"{mypath['data_dir']}/{args.dataset_name}/{Bfactor_fileid}.pdb"
+    Bfactor_file_path = (
+        f"{my_path['data_dir']}/{args.dataset_name}/{Bfactor_fileid}.pdb"
+    )
 
     CA_coors, labels = ut.get_protein_ca_atom_coordinate(pdbid, Bfactor_file_path)
 

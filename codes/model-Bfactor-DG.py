@@ -2,18 +2,20 @@ import sys
 from multiprocessing import Pool
 import multiprocessing
 import time
-
-sys.path.append("/Users/hongsongfeng/Desktop/B-factor-DG/8-Bfactor-DGGL-standalone/src")
 import numpy as np
 import os
 from sklearn.linear_model import LinearRegression
 import argparse
 import utilities as ut
-import DG_path
 
-mypath = DG_path.path_config()
+my_path = {}
+my_path["bin_dir"] = "bin"
+my_path["src_dir"] = "src"
+my_path["data_dir"] = "datasets"
+my_path["features_dir"] = "features"
+my_path["results_dir"] = "results"
 
-parser = argparse.ArgumentParser(description="PyTorch MNIST Example")
+parser = argparse.ArgumentParser(description="modeling")
 parser.add_argument("--dataset_name", type=str)
 parser.add_argument("--kernel_type", type=str)
 parser.add_argument("--kappas", type=str, default="2-5")
@@ -32,12 +34,12 @@ curvature_types = args.curvature_types.split("-")
 
 curvature_types_map = {"gaussian": "G", "mean": "M", "gaussian-mean": "G-M"}
 
-results_path = f"{mypath['results_dir']}/{dataset_name}"
+results_path = f"{my_path['results_dir']}/{dataset_name}"
 os.makedirs(results_path, exist_ok=True)
 
-dataset_path = f"{mypath['data_dir']}"
-pdb_path = f"{mypath['data_dir']}/{dataset_name}"
-feature_path = f"{mypath['features_dir']}/{dataset_name}"
+dataset_path = f"{my_path['data_dir']}"
+pdb_path = f"{my_path['data_dir']}/{dataset_name}"
+feature_path = f"{my_path['features_dir']}/{dataset_name}"
 
 list_pdbids = open(f"{dataset_path}/list-{dataset_name}.txt").read().splitlines()
 

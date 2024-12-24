@@ -2,8 +2,6 @@ import os
 import pandas as pd
 import numpy as np
 
-os.chdir("/Users/hongsongfeng/Desktop/B-factor-DG/8-Bfactor-DGGL-standalone")
-
 kernel_types = ["exp"]
 dataset_names = ["365"]
 curvature_typess = ["gaussian-mean"]
@@ -19,6 +17,6 @@ for dataset_name in dataset_names:
             for use_delta_filter in use_delta_filters:
                 for dx in dxs:
                     for upper_eta in upper_etas:
-                        cmd = f"python bin/model-Bfactor-DG.py --dataset_name {dataset_name} --kernel_type {kernel_type} --upper_eta {upper_eta} --dx {dx} --curvature_types {curvature_types}\n"
+                        cmd = f"python codes/model-Bfactor-DG.py --dataset_name {dataset_name} --kernel_type {kernel_type} --upper_eta {upper_eta} --dx {dx} --curvature_types {curvature_types}\n"
 
                         os.system(cmd)
