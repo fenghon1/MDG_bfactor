@@ -23,7 +23,7 @@
   - [I. mDG feature generation for 365 proteins](#i-mdg-feature-generation-for-365-proteins)
   - [II. mDG-based B-factor least square approximation](#ii-mdg-based-b-factor-least-square-approximation)
 - [Results](#results)
-    - [Modeling the Set-364 b-factor dataset]()
+  - [Modeling the Set-364 B-factor dataset](#modeling-the-set-364-b-factor-dataset)
 - [License](#license)
 - [Citation](#citation)
 
