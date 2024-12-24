@@ -7,7 +7,7 @@
 
 </div>
 
-**Title** - Knot data analysis using multiscale Gauss link integral.
+**Title** - Multiscale differential geometry learning for protein flexibility analysis.
 
 **Authors** - Hongsong Feng, Jeffrey Y. Zhao, and Guo-Wei Wei
 
