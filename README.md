@@ -112,6 +112,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-- Hongsong Feng, Jeffrey Y. Zhao, and Guo-Wei Wei, "Multiscale differential geometry learning for protein flexibility analysis"
+- Hongsong Feng, Jeffrey Y. Zhao, and Guo-Wei Wei, "Multiscale differential geometry learning for protein flexibility analysis", Journal of Computational Chemistry, 2025
 
 ---
